@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/new3"
+    android:padding="16dp">
+
+    <!-- Post Title TextView -->
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Post Content TextView -->
+    <TextView
+        android:id="@+id/postContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Content"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Icons and Counts Layout -->
+    <LinearLayout
+        android:layout_width="259dp"
+        android:layout_height="58dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <!-- Follow Button -->
+
+        <!-- Like Icon and Count -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_likes_active" />
+
+            <TextView
+                android:id="@+id/likesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Share Icon and Count -->
+        <LinearLayout
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_share_border" />
+
+            <TextView
+                android:id="@+id/sharesCount"
+                android:layout_width="29dp"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- More Icon -->
+
+        <Button
+            android:id="@+id/followButton"
+            android:layout_width="109dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Follow" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+
+    <!-- VideoView for displaying videos -->
+    <VideoView
+        android:id="@+id/postVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

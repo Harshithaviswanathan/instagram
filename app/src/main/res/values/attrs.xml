@@ -1,0 +1,7 @@
+<!-- res/values/attrs.xml -->
+<resources>
+    <declare-styleable name="CircularStatusIndicator">
+        <attr name="statusColor" format="color" />
+        <attr name="statusActive" format="boolean" />
+    </declare-styleable>
+</resources>

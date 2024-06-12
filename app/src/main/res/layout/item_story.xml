@@ -1,0 +1,25 @@
+<!-- res/layout/item_story.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/storyImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_placeholder" />
+
+    <View
+        android:id="@+id/statusIndicator"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignEnd="@id/storyImage"
+        android:layout_alignTop="@id/storyImage"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circle_green" /> <!-- Placeholder drawable for active state -->
+
+</RelativeLayout>
